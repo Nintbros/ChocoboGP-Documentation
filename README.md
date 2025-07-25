@@ -1,5 +1,6 @@
 # Chocobo GP Documentation (wip)
 Documentation of CGP's internal filestructure
+
 **NOTE:** No actual game code is found here, just parameter files and references to the game code. Whenever I say something has "code" in it, I actually mean that it points the game to where its code is in the executable, it's not something we can modify yet.
 Stuff marked with (wip) is not fully understood. Stuff marked with (x) either needs to be reverse engineered or is so obfuscated there's no point in trying to understand it.
 
