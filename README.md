@@ -32,6 +32,8 @@ The starting position for the players. Every track has 12 `GridPoints`, the firs
 Array listing the amount of, type of, and position & rotation data of the item boxes in the track (crystals count as item boxes as far as the game is concerned). Each `ItemPoint` has two subproperties, `Lotteries` and `Transforms`. Each `Lottery` has two values, one of the kind of Item Box it is (Crystal, Copper, Silver or Gold), and another one for how many of that kind are in the item row. Every type of Item Box requires a separate `Lottery` entry, for example needing 4 entries for an item row made up of Copper, Silver and Gold eggs, in addition to Crystals (seen in Choco Farm Hyperspeed):
 <img width="157" height="140" alt="imagen" src="https://github.com/user-attachments/assets/f5b7acaf-d58e-4365-8556-946e2ab4d78b" />
 Each `ItemPoint` also has a `Transforms` array, one for each Item Box. Using the previous image as an example, we can see it has 4 entries, those being the following:
+
+
 <img width="481" height="52" alt="imagen" src="https://github.com/user-attachments/assets/5588774b-b6cd-42cf-9817-747abf3894cf" /><img width="494" height="55" alt="imagen" src="https://github.com/user-attachments/assets/6a7480c5-1a30-4a09-a59e-d9df98b4aca1" /><img width="494" height="55" alt="imagen" src="https://github.com/user-attachments/assets/af25ed08-8c70-4851-8661-d37828954096" /><img width="501" height="56" alt="imagen" src="https://github.com/user-attachments/assets/8a39aff5-a949-47a7-b95b-80572d1b458a" />
 
 
