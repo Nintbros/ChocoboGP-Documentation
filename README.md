@@ -52,6 +52,10 @@ Each `CourseShellPoint` also stores whether it's a boost pad or a trick ramp:
 
 <img width="704" height="28" alt="imagen" src="https://github.com/user-attachments/assets/41c6e217-e1e2-43e8-b9d3-24e4ab68706e" />
 
+## `BranchProbabilities` (wip)
+
+(wip)
+
 ## `RouteMapPoints`
 
 Array made up of 2d positions ranging from 0 to 1 in both axes, which the game then uses to place your character icon on the Minimap. Note that the Minimap's texture is merely cosmetic (except if you're the Jailbird bomb, what the fuck) and changing it won't change the character icon's position any.
