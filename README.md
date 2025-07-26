@@ -26,10 +26,14 @@ This tells the game what Minimap texture to load
 
 <img width="475" height="30" alt="imagen" src="https://github.com/user-attachments/assets/2bb2ec64-8e60-4661-b4ed-3f826fb15706" />
 
+## `SubLevelIndicesToUse`
+For tracks that are always the same, just changing walls around in their layouts (like Cid's, Balamb and Midgar), this property is used to tell the game which track layout to load.
+
 ## `TrackingPoints` (wip)
-Array containing a couple hundred 3D coordinate sets that each make up 3 lines through the track: one to tell the game where the middle is, where the right is, and where the left is. Every `TrackingPoint` must dictate which is the next `TrackingPoint` and which is the previous one, as well as the distance between them. They also have a property named `UpVector` which is not yet understood
+Array containing a couple hundred 3D coordinate sets that each make up 3 lines through the track: one to tell the game where the middle is, where the right is, and where the left is. Every `TrackingPoint` must dictate which is the next `TrackingPoint` and which is the previous one, as well as the distance between them. They also have a property named `UpVector` which I believe to be how slanted it is (like how in Choco Hyperspeed you have a ramp that goes upwards and a path that goes downwards)
 ## `Checkpoints` (wip)
-Track's checkpoints. a track only has 3 checkpoints, 1 being reserved for the finish line (wip)
+Track's checkpoints. a track only has 3 checkpoints, 1 being reserved for the finish line.
+Every checkpoint has 2 bools, designating if that checkpoint is either the start or the end. For all tracks in CGP, the first checkpoint is the finish line, which counts both as the start and the finish. While you could hypothetically make a Mario Kart World Intermission style track, the game still expects there to be 3 laps, and there is no known way of changing this, so... 
 ## `GridPoints`
 The starting position for the players. Every track has 12 `GridPoints`, the first 8 being used for the 8 racers, and the last 4 being zeroed out. Every `GridPoint` has a position and a rotation value, which is where the player in that `GridPoint` spawns.
 ## `ItemPoints`
