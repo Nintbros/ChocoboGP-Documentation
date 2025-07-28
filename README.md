@@ -7,7 +7,7 @@ Stuff marked with (wip) is not fully understood. Stuff marked with (x) either ne
 # `BasicMaterials` (wip, prolly unused)
 As the name suggests, the folder contains basic materials that seem unreferenced by the game
 
-# `CameraData` (wip)
+# `Camera` (wip)
 Parameter files for the camera 
 
 # `Course`
@@ -55,6 +55,14 @@ It's an array made of `CourseShellPoints` (thanks squeenix), which themselves ar
 Each `CourseShellPoint` also stores whether it's a boost pad or a trick ramp:
 
 <img width="704" height="28" alt="imagen" src="https://github.com/user-attachments/assets/41c6e217-e1e2-43e8-b9d3-24e4ab68706e" />
+
+## `RespawnPoints` (wip)
+
+why the fuck do these exist
+
+## `DeadzonePoints` (wip)
+
+out of bound collision bubbles
 
 ## `BranchProbabilities` (wip)
 
