@@ -13,7 +13,7 @@ Parameter files for the camera
 # `Course`
 Folder containing **data** (not assets) for the game's tracks
 ## `Data`
-Subfolder containing the 26 tracks's data files
+Subfolder containing the 26 tracks's data files. For information on these files' data structure, check [this](https://github.com/Nintbros/ChocoboGP-Documentation/blob/main/TrackDataStructure.md).
 ## `Meshes` (wip, probably unused)
 Road and dirt textures? No clue what this is doing here, track models are elsewhere. Might be a remnant from development.
 
