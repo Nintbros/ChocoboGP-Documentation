@@ -13,6 +13,11 @@ This tells the game what Minimap texture to load
 
 <img width="475" height="30" alt="imagen" src="https://github.com/user-attachments/assets/2bb2ec64-8e60-4661-b4ed-3f826fb15706" />
 
+## `PlayBgmKey`*
+String denoting the default BGM to use for the track.
+
+For some god forsaken reason, Chocobo Farm doesn't have this property set, yet the game still loads its song properly, so maybe Bluegrass de Chocobo is the default track song if not specified.
+
 ## `SubLevelIndicesToUse`*
 For tracks that are always the same and only have 1 collision model, just changing walls around in their layouts (like Cid's, Balamb and Midgar), this property is used to tell the game which track layout (aka which sets of walls amongst others) to load.
 
