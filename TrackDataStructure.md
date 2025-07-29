@@ -25,7 +25,7 @@ Every TrackingPoint also *somehow* stores an "angle" for stuff like Swap (and by
 
 Reversing the order of these points in the physical array rather than just changing their Next & Prev pointers makes the game _very_ unhapy and leads it to crashing when loading a track.
 
--# (Note that this might be an unrelated side effect of how I am currently mass modifying track data)
+(Note that this might be an unrelated side effect of how I am currently mass modifying track data)
 ## `Checkpoints` (wip)
 Track's checkpoints. a track only has 3 checkpoints (except Midgar having 2), 1 being reserved for the finish line.
 Every checkpoint has 2 bools, designating if that checkpoint is either the start or the end. For all tracks in CGP, the first checkpoint is the finish line, which counts both as the start and the finish. While you could hypothetically make a Mario Kart World Intermission style track, the game still expects there to be 3 laps, and there is no known way of changing this, so... 
