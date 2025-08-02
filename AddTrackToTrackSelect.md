@@ -1,5 +1,5 @@
 # Step 1
-Extract both `UI/Menu/CourseSelect/DataTable/DT_UI_CourseSelect` and `Race/Data/DT_Location` as JSON files
+Extract both `UI/Menu/CourseSelect/DataTable/DT_UI_CourseSelect` and `Race/Data/DT_Location` as UASSET files, then open them up with uassetGUI and save them as JSON files (this is necessary, otherwise important metadata is lost and the game can't recognise them)
 
 # Step 2
 Open `DT_Location` up in your text editor of choice, then navigate to the track you want to add buttons to (for example, by searching `ELocationId::CHOCOBOFARM` for Choco Farm)
@@ -8,7 +8,7 @@ Open `DT_Location` up in your text editor of choice, then navigate to the track 
 Navigate to the `Value` array that contains track file data (e.g. `/Game/Course/Data/U_CourseData010.U_CourseData010` for Choco Farm Short)
 
 # Step 4
-Copy and paste the array (note that order matters), then change the track file to the corresponding track (change both numbers!)
+Copy and paste the array (note that order matters), then change the track file to the corresponding track (change both sets of numbers!)
 
 # Step 5
 Save changes & exit, then open `DT_UI_CourseSelect`
@@ -19,4 +19,4 @@ There are 3 properties the game cares about, and won't add a button to track sel
 Leech off of previous entries in the track you wanna add more layouts to (like with `DT_Location`) and modify the values as needed
 
 # Step 7
-Save & exit, convert the JSON files back to UASSET, and pack them up into a mod
+Save & exit, convert the JSON files back to UASSET by opening with uassetGUI then saving as UASSET, and pack them up into a mod
