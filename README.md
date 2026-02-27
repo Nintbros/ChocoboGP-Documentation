@@ -123,7 +123,7 @@ The format for the ghost files themselves isn't understood though and I am sure 
 
 # `Scene` (x)
 
-General BP code files for handling all the different scenes of the game It's only menus, though.
+General BP code files for handling all the different scenes of the game. It's only the menus, though.
 
 # `Sequence`
 
@@ -131,11 +131,16 @@ Contains the camera intro cutscenes for every course in the game, including the 
 
 # `Shell` (wip)
 
-Basically all of the Ult and Item code is found here
+Within the context of Chocobo GP, a Shell is a spawnable entity the racers can summon under certain circumstances. For example, Magicite or Ult projectiles. Miscellaneous race entities, like Checkpoints, boost pads and void out triggers also count as Shells internally. This folder contains a bunch of Blueprint code files for some of the Magicite, some of the Ults in the game, and the miscellaneous race entities. It is worth pointing out that /Shell/Abilities contains a file named `A_TestShell`. Pretty neat.
+
+The Magicites without a Shell BP are: Haste, MBarrier, Bahamut.
+I am too lazy to go through all 34 Ults but, eyeballed, only half of them have BP files here.
+
+This folder also contains a DataTable with some parameters for some of the Shells, and it actually seems to change things. So that's cool.
 
 # `Shop` (x)
 
-This folder contains `shop.dat`. I have no clue what the fuck it is. It scares me.
+This folder contains `shopitems.dat`. It is a binary file that somehow determines the items listed in the shop. It scares me.
 
 # `Sound` (wip)
 
@@ -152,7 +157,7 @@ Folder containing all the assets for Story Mode's cutscenes
 
 # `StringTable`
 
-This behemoth of a file exists to tell the game which message IDs correspond to what strings of text
+Standard UE folder. Maps text strings to their entries in the Locres file.
 
 # `Test` (wip, unused)
 
