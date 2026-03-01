@@ -1,15 +1,15 @@
 # Chocobo GP Documentation (wip)
 Documentation of CGP's internal filestructure and what stuff does in the context of the game
 
-**NOTE:** No actual game code is found here, just parameter files and references to the game code. Whenever I say something has "code" in it, I actually mean that it points the game to where its code is in the executable, it's not something we can modify yet.
-Unless it's blueprint code.
-Stuff marked with (wip) is not fully understood. Stuff marked with (x) is either obfuscated/blueprint code or is irrelevant for modding as far as I understand it.
+**NOTE:** No actual game code is found here, this is documentation for the internal filestructure for modding purposes. When I refer to something as "code" I mean Blueprint (BP) code.
+The game's executable is wholly off-limits, due to being a Nintendo Switch game. If you want to be the madlad to reverse engineer it, be my guest.
+Stuff marked with (wip) is not fully understood. Stuff marked with (x) is either obfuscated, blueprint code we should not be touching, or is irrelevant for modding as far as I understand it.
 
-# `BasicMaterials` (wip, prolly unused)
-As the name suggests, the folder contains some very basic materials for colors, normal maps, and whatever `T_basic_orm` stands for
+# `BasicMaterials` (unused)
+This folder contains some dummy materials that go entirely unused.
 
 # `Camera` (wip)
-Parameter files for the camera to tell it what to do in specific contexts (e.g. screenshake for quake)
+Camera effect and movement files. Contains files for Quake/Quakera/Quakega's screenshake, as well as the race results camera.
 
 # `Course`
 Folder containing **data** (not assets) for the game's tracks
@@ -17,8 +17,8 @@ Folder containing **data** (not assets) for the game's tracks
 Subfolder containing the 26* tracks's data files. For information on these files' data structure, check [this](https://github.com/Nintbros/ChocoboGP-Documentation/blob/main/TrackDataStructure.md).
 
 *Story mode technically uses its own tracks, making the total be technically higher, but those aren't here.
-## `Meshes` (wip, probably unused)
-Road and dirt textures, resembling Cid's Test Track's. No clue what this is doing here, track models are elsewhere. Might be a remnant from development.
+## `Meshes` (unused)
+Unused, remnant from development. Contains early assets for Cid's Test Track.
 
 ## `RouteMaps`
 Folder containing all the Minimap textures.
@@ -30,7 +30,7 @@ For some reason, Story Mode uses entirely unique tracks, completely independent 
 
 This is why BBH in the prologue is barren and has no items*.
 
-Fun fact! Story mode doesnt use a custom itemset like how you can do in online, it bakes the available magicite to be pulled into the track data itself, essentially "hardcoding" it. Pretty neat!
+Fun fact! Story mode doesn't use a custom itemset like how you can do in online, it bakes the available magicite to be pulled into the track data itself, essentially "hardcoding" it. Pretty neat!
 
 
 *BBH is an exception in that it has its own separate level file which is a carbon copy of the regular track, minus the fact it has the boost pads and conveyers removed. Boost pads & trick ramps have their hitboxes dictated by the track data files, but their visual models, as well as course gimmicks (such as conveyers) are dictated in the level file. BBH is the only exception and every other story mode race loads the same exact level as the proper tracks you can race online in.
@@ -49,7 +49,7 @@ This is what loads when you first boot the game. It loads the rest of the game a
 
 Folder containing the Game Manager BP and the Mirror Mode screen material. Sure.
 
-# `Item` (x)
+# `Item`
 
 Folder containing the Item Box Manager BP, Item Box and Crystal BP, and the list of Item IDs in the game.
 Like. For the shop, for example. Not for item boxes in races.
@@ -142,10 +142,59 @@ This folder also contains a DataTable with some parameters for some of the Shell
 
 This folder contains `shopitems.dat`. It is a binary file that somehow determines the items listed in the shop. It scares me.
 
-# `Sound` (wip)
+# `Sound` 
 
-This folder contains all the sound stuff and whatever
-Truth be told I've yet to look at it lol
+This is another big set of folders, so strap in.
+
+In this main folder are contained the SoundManagerBP, as well as `U_VoiceDataSetting`, which dictates which PLID (Player ID) uses what set of voicelines.
+
+Further, it contains two datatables, one listing out every BGM in the game, tying them to an item ID, and defining some characteristics about them (e.g. `bUsableAsRaceBgm`), and one listing out every Sound Effect in the game, as well as denoting if it is a system sound effect.
+
+Now, for the subfolders:
+
+## `_Others` (Unused)
+
+<img width="492" height="79" alt="image" src="https://github.com/user-attachments/assets/d57cd25c-d5bd-4f2a-9d02-a2a8436d491c" />
+
+Say hello to `SQ_Dummy`. It does absolutely nothing.
+
+## `Attenuation` (x)
+
+I'm gonna be very real. I'm not a sound kind of person. I don't know what Attenuation is supposed to mean in games. But I can tell you that this folder just houses another probably unused sound asset. Or if it is used, we probably should not be touching it anyway.
+
+## `Bgm`
+
+Okay, on to actually relevant things. This here folder contains all 85 music tracks found in Chocobo GP. They are all in Square Enix's proprietary sound format. Luckily, Audiomog works perfectly fine with CGP's sound uassets, so we have full control over them. For more information on BGM replacement, check out [this other readme](https://github.com/Nintbros/ChocoboGP-Documentation/blob/main/AddCustomSongToGame.md).
+
+## `Se`
+
+Folder containing other sub-folders.
+
+### `Game`
+
+This folder contains all 252 race sound effects. Thing's like Ultima's sound effect, online GP matchmaking sounds, Ult SFX, the works. They all use SQEX's proprietary sound format.
+
+This folder also itself houses an `Engine` subfolder, which houses all the looping sound effects for all the racing engines in the game.
+
+### `Stage`
+
+Subfolder containing all stage ambiance and hazards SFX.
+
+### `System`
+
+Subfolder containing generic system sound effects for menuing.
+
+## `VirticalSlice` (unused)
+
+If you are familiar with the concept of Vertical Slices, and adore early content, you might have just smiled. Housed here is a subfolder called `SE` that contains several sound files, including race SFX, system SFX, and even a song or two, used for CGP's January 2020 demo (which is as far as I am aware, lost media). These are for the most part early versions of final SFX and are noticeably different from the final game.
+
+## `Voice`
+
+Contains both the English and Japanese racing voice clips for all 34 characters, organized by PLID.
+
+## `VoiceList`
+
+Same as above, except housing DataTables mapping each voice file to the respective proper voice line response in-game.
 
 # `Stage` (wip)
 
@@ -159,7 +208,7 @@ Folder containing all the assets for Story Mode's cutscenes
 
 Standard UE folder. Maps text strings to their entries in the Locres file.
 
-# `Test` (wip, unused)
+# `Test` (unused)
 
 Boy I sure do love me some unused content!
 
