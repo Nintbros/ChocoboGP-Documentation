@@ -3,10 +3,15 @@ quick and dirty guide so i dont forget
 files to modify:
 
 >/Item/DT_Item - need to add item IDs for the new skins
+
 >/Player/param/PlayerXXDataAsset - the 3 ride config files hold information on which mesh is tied to what skin
+
 >/Player/param/DT_PlayerDatabase - the skinlist for the character on the engine (non-UI) side is defined in here
+
 >/UI/Menu/CharacterSelect/Parts/DataTable/DT_UI_SkinList - the skinlist for the UI (no UI = can't select skin even if it exists)
+
 >/UI/Common/CharacterData/CharaData/UI2D[CharaName] - config file for each individual character that also lists their skinlist
+
 NOTE: Path is /UI/UPdate/Common/CharaData for DLC characters.
 
 What specifically to change to every file:
