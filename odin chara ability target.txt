@@ -1,0 +1,716 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GA_CharaAbility30Target",
+    "Outer": "GA_CharaAbility30Target_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CharaAbility30Target_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerAbilityTask_CharaAbility30Target'",
+          "ObjectPath": "/Script/ChickenRace"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "DelegateFunction'PlayerAbilityTask_CharaAbility00:CharaAbilityTaskDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/ChickenRace"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_CommitAbility_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 10,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_CharaAbility30Target_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'PlayerAbilityTask_CharaAbility30Target'",
+                "ObjectPath": "/Script/ChickenRace"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Function'PlayerAbilityTask_CharaAbility30Target:CharaAbility30Target'",
+            "ObjectPath": "/Script/ChickenRace"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_Self"
+            },
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Path": [
+                  "PlayerBase"
+                ],
+                "ResolvedOwner": {
+                  "ObjectName": "Class'PlayerGameplayAbility'",
+                  "ObjectPath": "/Script/ChickenRace"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 40,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Function'KismetSystemLibrary:IsValid'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+                  "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "CallFunc_CharaAbility30Target_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 8,
+                  "PropertyClass": {
+                    "ObjectName": "Class'PlayerAbilityTask_CharaAbility30Target'",
+                    "ObjectPath": "/Script/ChickenRace"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 69,
+        "CodeOffset": 275,
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[275]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsValid_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_BindDelegate",
+        "StatementIndex": 83,
+        "FunctionName": "OnFinish_93DBCE0743B9621E9C330E8D284743F2",
+        "Delegate": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "DelegateProperty",
+              "Name": "K2Node_CreateDelegate_OutputDelegate",
+              "Flags": "RF_Public",
+              "ElementSize": 20,
+              "SignatureFunction": {
+                "ObjectName": "DelegateFunction'PlayerAbilityTask_CharaAbility00:CharaAbilityTaskDelegate__DelegateSignature'",
+                "ObjectPath": "/Script/ChickenRace"
+              }
+            }
+          }
+        },
+        "ObjectTerm": {
+          "Inst": "EX_Self"
+        }
+      },
+      {
+        "Inst": "EX_AddMulticastDelegate",
+        "StatementIndex": 106,
+        "MulticastDelegate": {
+          "Inst": "EX_Context",
+          "ObjectExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+                "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+              },
+              "Property": {
+                "Type": "ObjectProperty",
+                "Name": "CallFunc_CharaAbility30Target_ReturnValue",
+                "Flags": "RF_Public",
+                "ElementSize": 8,
+                "PropertyClass": {
+                  "ObjectName": "Class'PlayerAbilityTask_CharaAbility30Target'",
+                  "ObjectPath": "/Script/ChickenRace"
+                }
+              }
+            }
+          },
+          "Offset": 9,
+          "RValuePointer": {
+            "Path": [
+              "OnFinish"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'PlayerAbilityTask_CharaAbility00'",
+              "ObjectPath": "/Script/ChickenRace"
+            }
+          },
+          "ContextExpression": {
+            "Inst": "EX_InstanceVariable",
+            "Variable": {
+              "Path": [
+                "OnFinish"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'PlayerAbilityTask_CharaAbility00'",
+                "ObjectPath": "/Script/ChickenRace"
+              }
+            }
+          }
+        },
+        "Delegate": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "DelegateProperty",
+              "Name": "K2Node_CreateDelegate_OutputDelegate",
+              "Flags": "RF_Public",
+              "ElementSize": 20,
+              "SignatureFunction": {
+                "ObjectName": "DelegateFunction'PlayerAbilityTask_CharaAbility00:CharaAbilityTaskDelegate__DelegateSignature'",
+                "ObjectPath": "/Script/ChickenRace"
+              }
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 147,
+        "ObjectExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_CharaAbility30Target_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'PlayerAbilityTask_CharaAbility30Target'",
+                "ObjectPath": "/Script/ChickenRace"
+              }
+            }
+          }
+        },
+        "Offset": 10,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Function'GameplayTask:ReadyForActivation'",
+            "ObjectPath": "/Script/GameplayTasks"
+          },
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 179,
+        "CodeOffset": 275,
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[275]"
+      },
+      {
+        "Inst": "EX_VirtualFunction",
+        "StatementIndex": 184,
+        "Function": "K2_EndAbility",
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 198,
+        "CodeOffset": 275,
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[275]"
+      },
+      {
+        "Inst": "EX_VirtualFunction",
+        "StatementIndex": 203,
+        "Function": "SetupProc",
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 217,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_K2_CommitAbility_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_VirtualFunction",
+          "Function": "K2_CommitAbility",
+          "Parameters": []
+        }
+      },
+      {
+        "Inst": "EX_FinalFunction",
+        "StatementIndex": 241,
+        "Function": {
+          "ObjectName": "Function'PlayerGameplayAbility:BeginPlayerAbility'",
+          "ObjectPath": "/Script/ChickenRace"
+        },
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 251,
+        "CodeOffset": 10,
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[10]"
+      },
+      {
+        "Inst": "EX_FinalFunction",
+        "StatementIndex": 256,
+        "Function": {
+          "ObjectName": "Function'PlayerGameplayAbility:EndPlayerAbility'",
+          "ObjectPath": "/Script/ChickenRace"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+                "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+              },
+              "Property": {
+                "Type": "BoolProperty",
+                "Name": "K2Node_Event_bWasCancelled",
+                "Flags": "RF_Public",
+                "ElementSize": 1,
+                "FieldSize": 1,
+                "ByteOffset": 0,
+                "ByteMask": 1,
+                "FieldMask": 255,
+                "BoolSize": 1,
+                "bIsNativeBool": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 275,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 277
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_OnEndAbility",
+    "Outer": "GA_CharaAbility30Target_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'GameplayAbility:K2_OnEndAbility'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bWasCancelled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LetValueOnPersistentFrame",
+        "StatementIndex": 0,
+        "DestinationProperty": {
+          "Owner": {
+            "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+            "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+          },
+          "Property": {
+            "Type": "BoolProperty",
+            "Name": "K2Node_Event_bWasCancelled",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "FieldSize": 1,
+            "ByteOffset": 0,
+            "ByteMask": 1,
+            "FieldMask": 255,
+            "BoolSize": 1,
+            "bIsNativeBool": true
+          }
+        },
+        "AssignmentExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'GA_CharaAbility30Target_C:K2_OnEndAbility'",
+              "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.1"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "bWasCancelled",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 18,
+        "Function": {
+          "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+          "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 256
+          }
+        ],
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[256]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 33,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 35
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "K2_ActivateAbility",
+    "Outer": "GA_CharaAbility30Target_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Function'GameplayAbility:K2_ActivateAbility'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 0,
+        "Function": {
+          "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+          "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 203
+          }
+        ],
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[203]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 15,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 17
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnFinish_93DBCE0743B9621E9C330E8D284743F2",
+    "Outer": "GA_CharaAbility30Target_C",
+    "Class": "UScriptClass'Function'",
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 0,
+        "Function": {
+          "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+          "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 184
+          }
+        ],
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.ExecuteUbergraph_GA_CharaAbility30Target[184]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 15,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 17
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GA_CharaAbility30Target_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'PlayerGA_CharaAbility30Target'",
+      "ObjectPath": "/Script/ChickenRace"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:OnFinish_93DBCE0743B9621E9C330E8D284743F2'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.3"
+      },
+      {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:K2_ActivateAbility'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.2"
+      },
+      {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:K2_OnEndAbility'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.1"
+      },
+      {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GA_CharaAbility30Target": {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:ExecuteUbergraph_GA_CharaAbility30Target'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.0"
+      },
+      "K2_OnEndAbility": {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:K2_OnEndAbility'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.1"
+      },
+      "K2_ActivateAbility": {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:K2_ActivateAbility'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.2"
+      },
+      "OnFinish_93DBCE0743B9621E9C330E8D284743F2": {
+        "ObjectName": "Function'GA_CharaAbility30Target_C:OnFinish_93DBCE0743B9621E9C330E8D284743F2'",
+        "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.3"
+      }
+    },
+    "ClassFlags": "CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GA_CharaAbility30Target_C'Default__GA_CharaAbility30Target_C'",
+      "ObjectPath": "ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.5"
+    }
+  },
+  {
+    "Type": "GA_CharaAbility30Target_C",
+    "Name": "Default__GA_CharaAbility30Target_C",
+    "Class": "BlueprintGeneratedClass'ChickenRace/Content/Player/abilities/chara/GA_CharaAbility30Target.GA_CharaAbility30Target_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]
