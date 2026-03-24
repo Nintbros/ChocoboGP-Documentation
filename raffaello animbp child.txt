@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "Player32AnimBP_Child_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "AnimBlueprintGeneratedClass'PlayerAnimBP_Effect_C'",
+      "ObjectPath": "ChickenRace/Content/Player/PlayerAnimBP_Effect.1"
+    },
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_Common00_Skeleton'",
+        "ObjectPath": "ChickenRace/Content/Player/pl00/mdl/SK_Common00_Skeleton.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "AnimBlueprintGeneratedClass'PlayerAnimBP_Effect_C'",
+      "ObjectPath": "ChickenRace/Content/Player/PlayerAnimBP_Effect.1"
+    },
+    "ClassFlags": "CLASS_Transient | CLASS_Optional | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Player32AnimBP_Child_C'Default__Player32AnimBP_Child_C'",
+      "ObjectPath": "ChickenRace/Content/Player/pl32/Player32AnimBP_Child.1"
+    }
+  },
+  {
+    "Type": "Player32AnimBP_Child_C",
+    "Name": "Default__Player32AnimBP_Child_C",
+    "Class": "AnimBlueprintGeneratedClass'ChickenRace/Content/Player/pl32/Player32AnimBP_Child.Player32AnimBP_Child_C'",
+    "Template": {
+      "ObjectName": "PlayerAnimBP_Effect_C'Default__PlayerAnimBP_Effect_C'",
+      "ObjectPath": "ChickenRace/Content/Player/PlayerAnimBP_Effect.2"
+    },
+    "Properties": {
+      "AnimGraphNode_SequencePlayer_11": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_D_coutC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_D_coutC_1.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_10": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_ARun'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_ARun.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_10": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_ftwkC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_ftwkC_1.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_9": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Run'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Run.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_9": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_E_loserC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_E_loserC_1.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_8": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_E_goalC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_E_goalC_1.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_8": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Wspn'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Wspn.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_7": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Idle'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Idle.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_6": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Wspn'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Wspn.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_7": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_ftwkC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_ftwkC_1.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_6": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_jpstC_2'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_jpstC_2.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_5": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_lndgC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_lndgC_1.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_4": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_jpstC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_jpstC_1.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_3": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_lndgC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_lndgC_1.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_2": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_fallC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_fallC_1.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_5": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Srun'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Srun.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_4": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Back'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Back.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer_1": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_runC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_runC_1.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_3": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_DriftL'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_DriftL.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_2": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_DriftR'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_DriftR.0"
+        }
+      },
+      "AnimGraphNode_SequencePlayer": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'AS32_M_brakC_1'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/mot/AS32_M_brakC_1.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer_1": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Run'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Run.0"
+        }
+      },
+      "AnimGraphNode_BlendSpacePlayer": {
+        "BlendSpace": {
+          "ObjectName": "BlendSpace1D'BS32_Idle'",
+          "ObjectPath": "ChickenRace/Content/Player/pl32/BS32_Idle.0"
+        }
+      }
+    }
+  }
+]
